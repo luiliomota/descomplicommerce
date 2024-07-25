@@ -1,0 +1,50 @@
+.carrinho {
+    border: 2;
+    width: 400px;
+    max-height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    background:-moz-linear-gradient(#c9f1c9, #f8fff8)  
+}
+
+.mat-divider {
+    padding-bottom: 15px;
+}
+
+.mdc-fab--extended {
+    height: 35px;
+}
+
+.carrinho .titulo {
+    margin-bottom: 20px;
+}
+
+.carrinho button {
+    background-color: #90ee90;
+    border-radius: 8px;
+}
+
+.carrinho .itens {
+    height: 200px;
+}
+
+.carrinho .itens .lista {
+    height: 30px;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.carrinho .finalizar {
+    height: 40px;
+    display: flex;
+    place-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .carrinho {
+        width: 250px;
+    }
+}

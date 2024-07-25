@@ -1,0 +1,20 @@
+<div class="carrinho">
+    <div class="titulo">
+        <h2><mat-icon>shopping_cart</mat-icon> Carrinho de compras</h2>
+        <mat-divider/>
+        <button mat-fab extended (click)="limparItems()">Limpar carrinho</button>
+    </div>
+    <div class="itens">
+        <div *ngFor="let itemFilter of itemsFilter" class="lista">
+            <p>
+                {{contarProdutosRepetidos(items, itemFilter.nome)}}
+            </p>
+            <h3>{{itemFilter.nome}}</h3>
+            <p>Preço: R$ {{itemFilter.preco}}</p>
+        </div>
+    </div>
+    <div class="finalizar">
+        <h3>Total: R$ {{somaItems()}}</h3>
+        <button mat-fab extended>Finalizar compra</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.main {
+    padding: 30px;
+    display: flex;
+    place-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+}

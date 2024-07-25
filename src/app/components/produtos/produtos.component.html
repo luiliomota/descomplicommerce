@@ -1,0 +1,11 @@
+<div class="produtos">
+    <h2 class="titulo">Produtos</h2>
+    <mat-divider></mat-divider>
+    <div *ngFor="let produto of produtos" class="itens">
+        <h3>{{produto.nome}}</h3>
+        <p>Preço: R$ {{produto.preco}}</p>
+        <button mat-fab (click)="adicionarAoCarrinho(produto)">
+            <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+    </div>
+</div>

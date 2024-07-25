@@ -1,0 +1,29 @@
+.produtos {
+    width: 400px;
+    min-height: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    background:-moz-linear-gradient(#c9f1c9, #f8fff8)
+}
+
+.produtos .titulo {
+    margin-bottom: 20px;
+}
+
+.produtos .itens {
+    height: 45px;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.produtos .itens button {
+    height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .produtos {
+        width: 250px;
+    }
+}
